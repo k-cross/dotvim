@@ -1,5 +1,4 @@
 call pathogen#infect()
-"call pathogen#helptags()
 
 syntax on
 nmap <F8> :TagbarToggle<CR>
