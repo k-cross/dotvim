@@ -1,0 +1,24 @@
+snippet report
+\documentclass[${1:a4paper,11pt}]{${2:article}}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[${8:, inner=2.2cm, outer=3cm, top=2cm, bottom=2cm, offset=1cm}]{geometry}
+\author{${3:First Last}
+		\\\\${4:Class : Section : Time}
+		\\\\${5:University}}
+\title{\textbf{${6:Document Name}}}
+\date{\today}
+
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+\newpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\section{${7:New Section}}
+
+$0
+
+\end{document}
+endsnippet
