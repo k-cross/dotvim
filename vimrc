@@ -6,6 +6,7 @@ call pathogen#helptags()
 syntax on
 nmap <F8> :TagbarToggle<CR>
 nmap <F7> :NERDTreeToggle<CR>
+nmap <F1> :SyntasticToggleMode<CR>
 
 map <C-k> <C-w>k 
 map <C-l> <C-w>l
@@ -14,6 +15,8 @@ map <C-j> <C-w>j
 
 set tabstop=4 shiftwidth=4 softtabstop=4 scrolloff=8 expandtab
 set hidden
+
+"let g:airline_powerline_fonts = 1
 
 filetype plugin indent on
 
