@@ -1,8 +1,8 @@
 snippet report
-\documentclass[${1:a4paper,11pt}]{${2:article}}
-\usepackage{graphicx}
-\usepackage{wrapfig}
-\usepackage[${8:, inner=2.2cm, outer=3cm, top=2cm, bottom=2cm, offset=1cm}]{geometry}
+\documentclass[${1:letter,11pt}]{${2:article}}
+\usepackage{wrapfig, graphicx, tikz}
+\usepackage{amssymb,amsmath} %Math Packages
+\usepackage[, inner=3cm, outer=3cm, top=1.8cm, bottom=2cm]{geometry}
 \author{${3:First Last}
 		\\\\${4:Class : Section : Time}
 		\\\\${5:University}}
@@ -21,4 +21,33 @@ snippet report
 $0
 
 \end{document}
+endsnippet
+
+snippet homework
+\documentclass[${1:letter,11pt}]{${2:article}}
+\usepackage{wrapfig, graphicx, tikz}
+\usepackage{amssymb,amsmath} %Math Packages
+\usepackage[, inner=3cm, outer=3cm, top=1.8cm, bottom=2cm]{geometry}
+\author{${3:First Last}
+		\\\\${4:Class : Section : Time}
+		\\\\${5:University}}
+\title{\textbf{${6:Document Name}}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{${7:New Section}}
+
+$0
+
+\end{document}
+endsnippet
+
+snippet *
+\cdot $0
+endsnippet
+
+snippet \bin
+\binom{${1:n}}{${2:r}} $0
 endsnippet

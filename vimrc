@@ -23,6 +23,7 @@ filetype plugin indent on
 autocmd FileType python setlocal ts=3 sts=4 sw=4 expandtab
 autocmd FileType text setlocal spell
 autocmd FileType c setlocal ts=2 sts=2 sw=4 expandtab
+autocmd FileType java setlocal ts=2 sts=2 sw=4 expandtab
 autocmd BufNewFile,BufReadPost *.md setlocal filetype=markdown spell
 autocmd BufNewFile,BufReadPost *.csv setlocal filetype=csv
 autocmd BufNewFile,BufReadPost *.tex setlocal filetype=tex spell
