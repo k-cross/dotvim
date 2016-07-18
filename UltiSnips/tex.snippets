@@ -1,43 +1,41 @@
 snippet report
-\documentclass[${1:letter,11pt}]{${2:article}}
-\usepackage{wrapfig, graphicx, tikz}
-\usepackage{amssymb,amsmath} %Math Packages
-\usepackage[, inner=3cm, outer=3cm, top=1.8cm, bottom=2cm]{geometry}
+\documentclass[${1:letterpaper,11pt}]{${2:article}}
+\usepackage{multicol, wrapfig, graphicx, tikz}
+\usepackage{listings, amssymb, amsmath} %Math and Technical Packages
+\usepackage[, inner=2cm, outer=2cm, top=2cm, bottom=2cm]{geometry}
 \author{${3:First Last}
-		\\\\${4:Class : Section : Time}
-		\\\\${5:University}}
-\title{\textbf{${6:Document Name}}}
+		\\\\${5:Organization}}
+\title{${6:Document Name}}
 \date{\today}
 
 \begin{document}
-\pagenumbering{gobble}
-\maketitle
-\newpage
-
-\pagenumbering{arabic}
-\setcounter{page}{1}
-\section{${7:New Section}}
-
-$0
+  \pagenumbering{gobble}
+  \maketitle
+  \newpage
+  
+  \pagenumbering{arabic}
+  \setcounter{page}{1}
+  \section{${7:New Section}}
+    $0
 
 \end{document}
 endsnippet
 
 snippet homework
-\documentclass[${1:letter,11pt}]{${2:article}}
-\usepackage{wrapfig, graphicx, tikz}
-\usepackage{amssymb,amsmath} %Math Packages
-\usepackage[, inner=3cm, outer=3cm, top=1.8cm, bottom=2cm]{geometry}
+\documentclass[${1:letterpaper,11pt}]{${2:article}}
+\usepackage{multicol, wrapfig, graphicx, tikz}
+\usepackage{listings, amssymb,amsmath} %Math and Technical Packages
+\usepackage[, inner=2cm, outer=2cm, top=1.8cm, bottom=2cm]{geometry}
 \author{${3:First Last}
 		\\\\${4:Class : Section : Time}
 		\\\\${5:University}}
-\title{\textbf{${6:Document Name}}}
+\title{${6:Document Name}}
 \date{\today}
 
 \begin{document}
-\maketitle
+  \maketitle
 
-\section{${7:New Section}}
+  \section{${7:New Section}}
 
 $0
 
@@ -50,4 +48,17 @@ endsnippet
 
 snippet \bin
 \binom{${1:n}}{${2:r}} $0
+endsnippet
+
+snippet \fig
+\begin{figure}[${1:h}]
+    ${2:\centering}
+	\includegraphics[${3:width=6cm}]{${4:p1.png}}
+	\caption{\small ${5:Some text}}
+\end{figure}
+$0
+endsnippet
+
+snippet \sum
+\sum\limits_{${1:i=0}}^{${2:n}} $0
 endsnippet
