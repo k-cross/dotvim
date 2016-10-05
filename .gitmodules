@@ -34,3 +34,6 @@
 [submodule "bundle/systemverilog"]
 	path = bundle/systemverilog
 	url = http://github.com/morganp/vim-SystemVerilog.git
+[submodule "vim-airline-themes"]
+	path = vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes

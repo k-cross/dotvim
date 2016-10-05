@@ -1,5 +1,5 @@
 "<AUTHOR> k-cross
-"<SYSTEM> POSIX based config
+"<SYSTEM> Linux - Gentoo
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -26,7 +26,12 @@ autocmd FileType verilog setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType text setlocal spell
 autocmd FileType c setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType java setlocal ts=2 sts=2 sw=4 expandtab
+
 autocmd BufNewFile,BufReadPost *.v setlocal filetype=verilog
 autocmd BufNewFile,BufReadPost *.md setlocal filetype=markdown spell
 autocmd BufNewFile,BufReadPost *.csv setlocal filetype=csv
 autocmd BufNewFile,BufReadPost *.tex setlocal filetype=tex spell
+
+autocmd BufEnter *.tex colorscheme delek
+autocmd BufEnter *.py colorscheme industry
+autocmd BufEnter *.java colorscheme murphy
